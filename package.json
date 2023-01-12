@@ -7,7 +7,8 @@
     "build:icon": "wireit",
     "dev:playground": "wireit",
     "dev:core": "wireit",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache"
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
+    "hygen:component": "hygen component new"
   },
   "wireit": {
     "build:core": {
@@ -69,7 +70,8 @@
     "unplugin-vue-define-options": "^1.1.1",
     "vite": "^4.0.3",
     "vite-plugin-dts": "^1.7.1",
-    "wireit": "^0.9.2"
+    "wireit": "^0.9.2",
+    "hygen": "6.2.11"
   },
   "config": {
     "commitizen": {
