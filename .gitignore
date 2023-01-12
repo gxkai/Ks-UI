@@ -3,4 +3,5 @@ dist
 .wireit
 .vite-inspect
 theme-chalk
-packages/luff-icon/src/components
+packages/ks-icon/src/components
+/pnpm-lock.yaml

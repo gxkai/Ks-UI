@@ -1,31 +1,40 @@
 {
-  "name": "luff-ui",
+  "name": "ui",
   "scripts": {
     "prepare": "husky install",
     "commit": "git cz",
-    "build": "wireit",
+    "build:core": "wireit",
     "build:icon": "wireit",
-    "dev:component": "wireit",
-    "play": "pnpm -C playground run dev",
+    "dev:playground": "wireit",
+    "dev:core": "wireit",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache"
   },
   "wireit": {
-    "build": {
-      "command": "pnpm -C packages/luff-core run build",
+    "build:core": {
+      "command": "pnpm -C packages/core run build",
       "files": [
-        "packages/luff-core/**/**/*.vue",
-        "packages/luff-core/**/**/*.ts",
-        "packages/luff-core/**/*.ts"
+        "packages/core/**/**/*.vue",
+        "packages/core/**/**/*.ts",
+        "packages/core/**/*.ts"
       ],
       "dependencies": [
         "build:icon"
       ]
     },
     "build:icon": {
-      "command": "pnpm -C packages/luff-icon run build"
+      "command": "pnpm -C packages/icon run build"
     },
-    "dev:component": {
-      "command": "pnpm -C packages/luff-core run build --watch"
+    "dev:playground": {
+      "command": "pnpm -C playground run dev",
+      "dependencies": [
+        "build:core"
+      ]
+    },
+    "dev:core": {
+      "command": "pnpm -C packages/core run dev",
+      "dependencies": [
+        "build:icon"
+      ]
     }
   },
   "devDependencies": {
@@ -34,7 +43,7 @@
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
-    "chalk": "^5.2.0",
+    "chalk": "4.1.2",
     "consola": "^2.15.3",
     "cz-git": "^1.4.1",
     "eslint": "^8.31.0",

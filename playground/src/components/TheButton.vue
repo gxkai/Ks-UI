@@ -1,50 +1,50 @@
 <template>
   <h2>color</h2>
   <div class="demo-block">
-    <LuButton color="primary">primary</LuButton>
-    <LuButton color="danger">danger</LuButton>
-    <LuButton color="success">success</LuButton>
-    <LuButton color="warning">warning</LuButton>
-    <LuButton color="info">info</LuButton>
+    <KsButton color="primary">primary</KsButton>
+    <KsButton color="danger">danger</KsButton>
+    <KsButton color="success">success</KsButton>
+    <KsButton color="warning">warning</KsButton>
+    <KsButton color="info">info</KsButton>
   </div>
   <h2>variant</h2>
   <div class="demo-block">
-    <LuButton color="primary">primary</LuButton>
-    <LuButton color="primary" variant="light">danger</LuButton>
-    <LuButton color="primary" variant="outline">success</LuButton>
-    <LuButton color="primary" variant="subtle">warning</LuButton>
-    <LuButton color="primary" variant="default">info</LuButton>
-    <LuButton color="primary" variant="white">info</LuButton>
+    <KsButton color="primary">primary</KsButton>
+    <KsButton color="primary" variant="light">danger</KsButton>
+    <KsButton color="primary" variant="outline">success</KsButton>
+    <KsButton color="primary" variant="subtle">warning</KsButton>
+    <KsButton color="primary" variant="default">info</KsButton>
+    <KsButton color="primary" variant="white">info</KsButton>
   </div>
   <h2>Size</h2>
   <div class="demo-block">
-    <LuButton color="primary" size="xs">Settings</LuButton>
-    <LuButton color="primary" size="sm">Settings</LuButton>
-    <LuButton color="primary" size="md">Settings</LuButton>
-    <LuButton color="primary" size="lg">Settings</LuButton>
-    <LuButton color="primary" size="xl">Settings</LuButton>
+    <KsButton color="primary" size="xs">Settings</KsButton>
+    <KsButton color="primary" size="sm">Settings</KsButton>
+    <KsButton color="primary" size="md">Settings</KsButton>
+    <KsButton color="primary" size="lg">Settings</KsButton>
+    <KsButton color="primary" size="xl">Settings</KsButton>
   </div>
   <h2>roundend</h2>
   <div class="demo-block">
-    <LuButton color="primary" radius="xs">Settings</LuButton>
-    <LuButton color="primary" radius="sm">Settings</LuButton>
-    <LuButton color="primary" radius="md">Settings</LuButton>
-    <LuButton color="primary" radius="lg">Settings</LuButton>
-    <LuButton color="primary" radius="xl">Settings</LuButton>
+    <KsButton color="primary" radius="xs">Settings</KsButton>
+    <KsButton color="primary" radius="sm">Settings</KsButton>
+    <KsButton color="primary" radius="md">Settings</KsButton>
+    <KsButton color="primary" radius="lg">Settings</KsButton>
+    <KsButton color="primary" radius="xl">Settings</KsButton>
   </div>
   <h2>loading</h2>
   <div class="demo-block">
-    <LuButton color="primary" loading>Settings</LuButton>
-    <LuButton color="primary" loading loadingPosition="right">Settings</LuButton>
-    <LuButton color="primary" :leftIcon="Lu24HoursFill">Settings</LuButton>
-    <LuButton color="primary" :rightIcon="Lu24HoursFill">Settings</LuButton>
+    <KsButton color="primary" loading>Settings</KsButton>
+    <KsButton color="primary" loading loadingPosition="right">Settings</KsButton>
+    <KsButton color="primary" :leftIcon="Ks24HoursFill">Settings</KsButton>
+    <KsButton color="primary" :rightIcon="Ks24HoursFill">Settings</KsButton>
   </div>
   <h2>disabled</h2>
   <div class="demo-block">
-    <LuButton disabled>Settings</LuButton>
+    <KsButton disabled>Settings</KsButton>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { Lu24HoursFill } from '@luff-ui/icon'
+import { Ks24HoursFill } from '@ks-ui/icon'
 </script>

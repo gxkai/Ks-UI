@@ -10,10 +10,10 @@
     </div>
     <div>
       <legend>with balancer</legend>
-      <LuBalancer
+      <KsBalancer
         >You have wakened not out of sleep, but into a prior dream, and that dream lies within another, and so on, to
         infinity, which is the number of grains of sand. The path that you are to take is endless, and you will die
-        before you have truly awakened.</LuBalancer
+        before you have truly awakened.</KsBalancer
       >
     </div>
   </div>
